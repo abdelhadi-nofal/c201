@@ -1,0 +1,21 @@
+body {
+    background-color: blue;
+}
+
+li {background-color: rgb(178, 231, 118);
+    display: inline;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 2px;
+
+}
+
+a {
+    text-decoration: none;
+}
+#para1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(228, 217, 220);
+    font-weight: 1000;
+
+}
