@@ -11,7 +11,7 @@ let noa='no';
 let nop='n';
 let cnt=0;
 
-let userInput2=prompt('IS 5>3').toLowerCase();
+let userInput2=prompt('AM I JORDANIAN?').toLowerCase();
 while (true) {
   if(userInput2===yea){
     alert('You are CORRECT  ');
@@ -42,7 +42,7 @@ while (true) {
   }
 }
 
-let Age=prompt('IS 100<10.1').toLowerCase();
+let Age=prompt('AM I OVER 30 ?').toLowerCase();
 while (true) {
   if(Age===yea){
     alert('WRONG  ');
@@ -74,7 +74,7 @@ while (true) {
   }
 }
 
-let major=prompt('Is 4!=24').toLowerCase();
+let major=prompt('Did I study engineering?').toLowerCase();
 while (true) {
   if(major===yea){
     alert('You are CORRECT  '+userInput1);
@@ -106,7 +106,7 @@ while (true) {
   }
 }
 
-let uni=prompt('Is 0!=1').toLowerCase();
+let uni=prompt('DID GRADUATED FROM ALZAYTOONAH UNIVERSITY ? ').toLowerCase();
 while (true) {
   if(uni===yea){
     alert('You are CORRECT  '+userInput1);
@@ -138,7 +138,7 @@ while (true) {
   }
 }
 
-let ltuc=prompt('Is 1!=0').toLowerCase();
+let ltuc=prompt('Am I studying at alzayoonah university at the moment ?').toLowerCase();
 while (true) {
   if(ltuc===yea){
     alert('WRONG  '+userInput1);
