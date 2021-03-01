@@ -152,14 +152,14 @@ while (true) {
 
   }
 
-  else if (userInput2===noa){
+  else if (ltuc===noa){
     alert('You are CORRECT');
     console.log('CORRECT');
     cnt=cnt+1;
     break;
 
   }
-  else if (userInput2===nop){
+  else if (ltuc===nop){
     alert('You are CORRECT');
     console.log('CORRECT');
     cnt=cnt+1;
