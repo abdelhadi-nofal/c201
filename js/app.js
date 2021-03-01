@@ -1,3 +1,5 @@
+'use strict';
+
 let userInput1=prompt('What`s Your Name ?');
 alert('You are Welcome  '+userInput1);
 document.write('<h1>welcome  ' +userInput1 +'</h1>');
