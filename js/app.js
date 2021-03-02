@@ -113,26 +113,31 @@ for(let i=0;i<4;i++)
 {
   let userInput3=prompt('Guess the secret Number ? You have 4 chances !! ?');
   let userInput4=parseInt(userInput3);
+ 
   if (userInput4===CORRECT){
     alert('You are Right!!');
     console.log('CORRECT');
     cnt+=1;
     break;
   }
+  else {
+    if (i===3){
+      alert('OPPS! YOU OUT OF CHANCES!! The Secret Number is ' + CORRECT);
 
-  else if (userInput4>3){
-    alert('Number is lower than that');
-  }
-  else if (userInput4<3){
-    alert('number is higher than that!!');
-  }
-  else if(userInput3!==Number) {
-    alert('Plz enter Number');
-  }
-  else{
-    alert('number is 3');
+    }else if (userInput4>CORRECT){
+      alert('Number is lower than that');
+  
+    }
+    else if (userInput4<CORRECT){
+      alert('number is higher than that!!');
+    }
+    else if(userInput3!==Number) {
+      alert('Plz enter Number');
+    }
   }
 }
+
+
 
 
 let car=['bmw','audi','nissan','golf'];
@@ -145,14 +150,15 @@ for(let i=0;i<6;i++)
     console.log('CORRECT');
     cnt+=1;
     break;
+  }else{
+    if(i===5){
+      alert('OPPS! YOU OUT OF CHANCES These My Fav Cars (bmw,audi,nissan,golf) ');
+    }
+    else if (userInput5!==car[0]||userInput5!==car[1]||userInput5!==car[2]||userInput5!==car[3]){
+      alert('NO!! That not one of them');
+    }
   }
 
-  else if (userInput5!==car[0]||userInput5!==car[1]||userInput5!==car[2]||userInput5!==car[3]){
-    alert('NO!! That not one of them');
-  }
-  else{
-    alert('these my fav (cars bmw,audi,nissan,golf)');
-  }
 }
 
 
