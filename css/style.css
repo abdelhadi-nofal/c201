@@ -2,7 +2,7 @@ body {
     background-color: blue;
 }
 
-li {background-color: rgb(178, 231, 118);
+#navli {background-color: rgb(178, 231, 118);
     display: inline;
     margin-left: 150px;
     margin-right: 150px;
@@ -22,4 +22,17 @@ a {
 
 h1{
     color: aliceblue;
+}
+h4{
+    background-color: rgb(123, 155, 6);
+    color: azure;
+    display: inline-flex;
+    margin: auto;
+}
+li{
+    background-color:rgb(123, 155, 6) ;
+    color: azure;
+    margin: auto;
+}
+ol{text-decoration-color: rgb(123, 155, 6);
 }

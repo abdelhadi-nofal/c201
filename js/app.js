@@ -108,30 +108,60 @@ while (enter) {
 }
 
 
-document.write('<h1>Your Score Is  ' + cnt +'  From  5 </h1>');
+let CORRECT=3;
+for(let i=0;i<4;i++)
+{
+  let userInput3=prompt('Guess the secret Number ? You have 4 chances !! ?');
+  let userInput4=parseInt(userInput3);
+  if (userInput4===CORRECT){
+    alert('You are Right!!');
+    console.log('CORRECT');
+    cnt+=1;
+    break;
+  }
 
-// let att=5;
-// do {
-//   alert('less one att');
-//   att-=1;
-//   console.log(att);
-// }while (att>0);
+  else if (userInput4>3){
+    alert('Number is lower than that');
+  }
+  else if (userInput4<3){
+    alert('number is higher than that!!');
+  }
+  else if(userInput3!==Number) {
+    alert('Plz enter Number');
+  }
+  else{
+    alert('number is 3');
+  }
+}
 
 
-// while(att>0){
-//   alert('sdfds')
-// }
+let car=['bmw','audi','nissan','golf'];
 
-// let array=['red','blue','green','yellow'];
-// console.log('lenth :', array.length);
-// console.log(array[2]);
-// console.log(array[array.length-1]);
+for(let i=0;i<6;i++)
+{
+  let userInput5=prompt('Guess One Of My Fav car ? You have 6 chances !! ?');
+  if (userInput5===car[0]||userInput5===car[1]||userInput5===car[2]||userInput5===car[3]){
+    alert('You are Right!!');
+    console.log('CORRECT');
+    cnt+=1;
+    break;
+  }
+
+  else if (userInput5!==car[0]||userInput5!==car[1]||userInput5!==car[2]||userInput5!==car[3]){
+    alert('NO!! That not one of them');
+  }
+  else{
+    alert('these my fav (cars bmw,audi,nissan,golf)');
+  }
+}
 
 
 
 
 
 
+
+document.write('<h1>Your Score Is  ' + cnt +'  From  7 </h1>');
 
 
 
