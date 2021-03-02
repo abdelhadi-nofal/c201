@@ -23,7 +23,7 @@ a {
 h1{
     color: aliceblue;
 }
-h4{
+h4,h2{
     background-color: rgb(123, 155, 6);
     color: azure;
     display: inline-flex;

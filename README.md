@@ -7,4 +7,7 @@
 ***
 
 ## lab03
-
+* add 2 more question tu gussing game
+* using if statement
+* using for loop
+* using array
