@@ -12,9 +12,11 @@ let nop='n';
 let cnt=0;
 let enter=true;
 
-let userInput2=prompt('AM I JORDANIAN?').toLowerCase();
 
-while (enter) {
+
+
+
+function q1(userInput2){while (enter) {
   if(userInput2===yea || userInput2===yep){
     alert('You are CORRECT  ');
     console.log('CORRECT');
@@ -25,16 +27,16 @@ while (enter) {
     alert('WRONG');
     console.log('WRONG');
     break;
-
   }
-
   else {
     break;
   }
-}
+}}
+q1(prompt('AM I JORDANIAN?').toLowerCase());
 
-let Age=prompt('AM I OVER 30 ?').toLowerCase();
-while (enter) {
+
+
+function q2(Age){while (enter) {
   if(Age===yea ||Age===yep){
     alert('WRONG  ');
     console.log('WRONG');
@@ -50,9 +52,11 @@ while (enter) {
     break;
   }
 }
+}
+q2(prompt('AM I OVER 30 ?').toLowerCase());
 
-let major=prompt('Did I study engineering?').toLowerCase();
-while (enter) {
+
+function q3(major){while (enter) {
   if(major===yea || major===yep){
     alert('You are CORRECT  '+userInput1);
     console.log('CORRECT');
@@ -63,15 +67,15 @@ while (enter) {
     alert('WRONG');
     console.log('WRONG');
     break;
-
   }
   else {
     break;
   }
 }
+}
+q3(prompt('Did I study engineering?').toLowerCase());
 
-let uni=prompt('DID GRADUATED FROM ALZAYTOONAH UNIVERSITY ?').toLowerCase();
-while (enter) {
+function q4(uni){while (enter) {
   if(uni===yea || uni===yep){
     alert('You are CORRECT  '+userInput1);
     console.log('CORRECT');
@@ -82,84 +86,97 @@ while (enter) {
     alert('WRONG');
     console.log('WRONG');
     break;
-
   }
   else {
     break;
   }
 }
-
-let ltuc=prompt('Am I studying at alzayoonah university at the moment ?').toLowerCase();
-while (enter) {
-  if(ltuc===yea || ltuc===yep){
-    alert('WRONG  '+userInput1);
-    console.log('WRONG');
-    break;
-  }
-  else if (ltuc===noa || ltuc===nop){
-    alert('You are CORRECT');
-    console.log('CORRECT');
-    cnt=cnt+1;
-    break;
-  }
-  else {
-    break;
-  }
 }
+q4(prompt('DID GRADUATED FROM ALZAYTOONAH UNIVERSITY ?').toLowerCase());
+ 
+
+
+
+function q5(ltuc){
+  while (enter) {
+    if(ltuc===yea || ltuc===yep){
+      alert('WRONG  '+userInput1);
+      console.log('WRONG');
+      break;
+    }
+    else if (ltuc===noa || ltuc===nop){
+      alert('You are CORRECT');
+      console.log('CORRECT');
+      cnt=cnt+1;
+      break;
+    }
+    else {
+      break;
+    }
+  }
+
+}
+q5(prompt('Am I studying at alzayoonah university at the moment ?').toLowerCase());
+
 
 
 let CORRECT=3;
-for(let i=0;i<4;i++)
-{
-  let userInput3=prompt('Guess the secret Number ? You have 4 chances !! ?');
-  let userInput4=parseInt(userInput3);
- 
-  if (userInput4===CORRECT){
-    alert('You are Right!!');
-    console.log('CORRECT');
-    cnt+=1;
-    break;
-  }
-  else {
-    if (i===3){
-      alert('OPPS! YOU OUT OF CHANCES!! The Secret Number is ' + CORRECT);
-
-    }else if (userInput4>CORRECT){
-      alert('Number is lower than that');
+function q6 (userInput3){
+  for(let i=0;i<4;i++)
+  {
+    let userInput3=prompt('Guess the secret Number ? You have 4 chances !! ?');
+    let userInput4=parseInt(userInput3);
+   
+    if (userInput4===CORRECT){
+      alert('You are Right!!');
+      console.log('CORRECT');
+      cnt+=1;
+      break;
+    }
+    else {
+      if (i===3){
+        alert('OPPS! YOU OUT OF CHANCES!! The Secret Number is ' + CORRECT);
   
-    }
-    else if (userInput4<CORRECT){
-      alert('number is higher than that!!');
-    }
-    else if(userInput3!==Number) {
-      alert('Plz enter Number');
+      }else if (userInput4>CORRECT){
+        alert('Number is lower than that');
+    
+      }
+      else if (userInput4<CORRECT){
+        alert('number is higher than that!!');
+      }
+      else if(userInput3!==Number) {
+        alert('Plz enter Number');
+      }
     }
   }
 }
 
+q6(prompt('Guess the secret Number ? You have 4 chances !! ?')); 
 
 
 
 let car=['bmw','audi','nissan','golf'];
-
-for(let i=0;i<6;i++)
-{
-  let userInput5=prompt('Guess One Of My Fav car ? You have 6 chances !! ?');
-  if (userInput5===car[0]||userInput5===car[1]||userInput5===car[2]||userInput5===car[3]){
-    alert('You are Right!!');
-    console.log('CORRECT');
-    cnt+=1;
-    break;
-  }else{
-    if(i===5){
-      alert('OPPS! YOU OUT OF CHANCES These My Fav Cars (bmw,audi,nissan,golf) ');
+function  q7(userInput5){
+  for(let i=0;i<6;i++)
+  {
+    let userInput5=prompt('Guess One Of My Fav car ? You have 6 chances !! ?');
+    if (userInput5===car[0]||userInput5===car[1]||userInput5===car[2]||userInput5===car[3]){
+      alert('You are Right!!');
+      console.log('CORRECT');
+      cnt+=1;
+      break;
+    }else{
+      if(i===5){
+        alert('OPPS! YOU OUT OF CHANCES These My Fav Cars (bmw,audi,nissan,golf) ');
+      }
+      else if (userInput5!==car[0]||userInput5!==car[1]||userInput5!==car[2]||userInput5!==car[3]){
+        alert('NO!! That not one of them');
+      }
     }
-    else if (userInput5!==car[0]||userInput5!==car[1]||userInput5!==car[2]||userInput5!==car[3]){
-      alert('NO!! That not one of them');
-    }
+  
   }
-
 }
+q7(prompt('Guess One Of My Fav car ? You have 6 chances !! ?'));
 
 
 
