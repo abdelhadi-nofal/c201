@@ -21,7 +21,6 @@ let enter=true;
 function q1(userInput2){while (enter) {
   if(userInput2===yea || userInput2===yep){
     alert('You are CORRECT  ');
-    console.log('CORRECT');
     cnt=cnt+1;
     break;
   }
@@ -41,12 +40,10 @@ q1(prompt('AM I JORDANIAN?').toLowerCase());
 function q2(Age){while (enter) {
   if(Age===yea ||Age===yep){
     alert('WRONG  ');
-    console.log('WRONG');
     break;
   }
   else if (Age===noa || Age===nop){
     alert('You are CORRECT');
-    console.log('CORRECT');
     cnt=cnt+1;
     break;
   }
@@ -61,13 +58,11 @@ q2(prompt('AM I OVER 30 ?').toLowerCase());
 function q3(major){while (enter) {
   if(major===yea || major===yep){
     alert('You are CORRECT  '+userInput1);
-    console.log('CORRECT');
     cnt=cnt+1;
     break;
   }
   else if (major===noa || major===nop){
     alert('WRONG');
-    console.log('WRONG');
     break;
   }
   else {
@@ -80,13 +75,11 @@ q3(prompt('Did I study engineering?').toLowerCase());
 function q4(uni){while (enter) {
   if(uni===yea || uni===yep){
     alert('You are CORRECT  '+userInput1);
-    console.log('CORRECT');
     cnt=cnt+1;
     break;
   }
   else if (uni===noa || uni===nop){
     alert('WRONG');
-    console.log('WRONG');
     break;
   }
   else {
@@ -103,12 +96,10 @@ function q5(ltuc){
   while (enter) {
     if(ltuc===yea || ltuc===yep){
       alert('WRONG  '+userInput1);
-      console.log('WRONG');
       break;
     }
     else if (ltuc===noa || ltuc===nop){
       alert('You are CORRECT');
-      console.log('CORRECT');
       cnt=cnt+1;
       break;
     }
@@ -131,7 +122,6 @@ function q6 (userInput3){
 
     if (userInput4===CORRECT){
       alert('You are Right!!');
-      console.log('CORRECT');
       cnt+=1;
       break;
     }
@@ -164,7 +154,6 @@ function q7(userInput5){
     userInput5=prompt('Guess One Of My Fav car ? You have 6 chances !! ?');
     if (userInput5===car[0]||userInput5===car[1]||userInput5===car[2]||userInput5===car[3]){
       alert('You are Right!!');
-      console.log('CORRECT');
       cnt+=1;
       break;
     }else{
