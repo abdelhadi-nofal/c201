@@ -2,7 +2,9 @@
 
 let userInput1=prompt('What`s Your Name ?');
 alert('You are Welcome  '+userInput1);
-document.write('<h1>welcome  ' +userInput1 +'</h1>');
+document.getElementById('well').innerHTML = 'Heloo '+ userInput1 +' Wellcome To My Webpage (^-^)';
+
+
 alert('Answer be(yes/y-no/n)');
 
 let yea='yes';
@@ -124,9 +126,9 @@ let CORRECT=3;
 function q6 (userInput3){
   for(let i=0;i<4;i++)
   {
-    let userInput3=prompt('Guess the secret Number ? You have 4 chances !! ?');
+    userInput3=prompt('Guess the secret Number ? You have 4 chances !! ?');
     let userInput4=parseInt(userInput3);
-   
+
     if (userInput4===CORRECT){
       alert('You are Right!!');
       console.log('CORRECT');
@@ -136,10 +138,10 @@ function q6 (userInput3){
     else {
       if (i===3){
         alert('OPPS! YOU OUT OF CHANCES!! The Secret Number is ' + CORRECT);
-  
+
       }else if (userInput4>CORRECT){
         alert('Number is lower than that');
-    
+
       }
       else if (userInput4<CORRECT){
         alert('number is higher than that!!');
@@ -151,15 +153,15 @@ function q6 (userInput3){
   }
 }
 
-q6(prompt('Guess the secret Number ? You have 4 chances !! ?')); 
+q6();
 
 
 
 let car=['bmw','audi','nissan','golf'];
-function  q7(userInput5){
+function q7(userInput5){
   for(let i=0;i<6;i++)
   {
-    let userInput5=prompt('Guess One Of My Fav car ? You have 6 chances !! ?');
+    userInput5=prompt('Guess One Of My Fav car ? You have 6 chances !! ?');
     if (userInput5===car[0]||userInput5===car[1]||userInput5===car[2]||userInput5===car[3]){
       alert('You are Right!!');
       console.log('CORRECT');
@@ -173,18 +175,17 @@ function  q7(userInput5){
         alert('NO!! That not one of them');
       }
     }
-  
+
   }
 }
-q7(prompt('Guess One Of My Fav car ? You have 6 chances !! ?'));
+q7(prompt());
+
+document.getElementById('well2').innerHTML = 'Your Score is '+ cnt +' Out Of 7';
 
 
 
 
 
-
-
-document.write('<h1>Your Score Is  ' + cnt +'  From  7 </h1>');
 
 
 
